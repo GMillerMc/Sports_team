@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  /* Header/logo Title */
+.header{
+  
+    padding: 10px;
+    background: #001489;
+    color: white;
+    font-size: 4vh;  
+}
+
+.flpic {
+  float: left;
+}
+
+h2 {
+  color: #001489;
+}
+
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 70%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    align-content: center;
+    color: #001489;
+  }
+  
+  /* Main column */
+    .main {
+    flex: 30%;
+    background-color: white;
+    padding: 30px;
+  }
+  
+ 
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+   
+  }
+  
+  td, th {
+    border: 1px solid  #001489;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  tr {
+      color:  #001489;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #001489;
+    color: white;
+  }
+
+
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #001489;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
